@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         sp = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
+        GameManager.Instance.GameManagerCheck();
     }
 
     private void PlayerAnimation(string animationTriggerName)
