@@ -5,8 +5,7 @@ public class PlayerPositionHandle : MonoBehaviour
     #region Condition
     Vector2 playerCurrentPosition;
     [SerializeField] Vector2 currentCheckpointPosition;
-
-
+    
     public void onCheckpoint(GameObject col)
     {
         Vector2 newCheckpointPosition = col.transform.position;
@@ -18,9 +17,11 @@ public class PlayerPositionHandle : MonoBehaviour
     {
         ChangePlayerPosition(currentCheckpointPosition);
     }
-    public void OnFinish()
+    public void OnFinish(int newLevelUnlocked)
     {
-        playerPositionData.ResetData();
+        Debug.Log("Finish Kepanggil");
+        GameManager.Instance.ChangeLevel(newLevelUnlocked);
+    
     }
 
     #endregion
