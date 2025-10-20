@@ -169,4 +169,4 @@ classDiagram
     GameManager --> AudioManager : plays sound events
     GameManager --> UIManager : controls end screen
 
-'''
+
