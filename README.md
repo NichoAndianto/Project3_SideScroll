@@ -6,6 +6,7 @@ NichoAndianto (Game Developer)
 About
 
 Side-Scrolling Platformer [Prototype] is a 2D action platformer project developed to explore character movement, obstacle interaction, and progressive level design. The game focuses on smooth player control, responsive jumping, and engaging level flow. My contributions include designing the movement system, implementing physics-based interactions, and developing the level progression framework.
+
 <br>
 
 Key Features
@@ -28,7 +29,18 @@ flowchart LR
   gp -- "Player Death / Level Complete" --> es
   es -- "Restart" --> gp
   es -- "Main Menu" --> mm
+<br>
 
+| 📂 Name              | 🎬 Scene                  | 📋 Responsibility                                                                                                      |
+| -------------------- | ------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| **MainMenu**         | **Main Menu**             | - Display UI<br/>- Start game or exit                                                                                  |
+| **PlayerController** | **Gameplay**              | - Handle horizontal movement and jumping<br/>- Detect collisions with environment<br/>- Manage respawn and checkpoints |
+| **LevelManager**     | **Gameplay**              | - Manage level start and completion<br/>- Handle transitions and reset                                                 |
+| **ObstacleSystem**   | **Gameplay**              | - Detect traps and hazards<br/>- Trigger player death or respawn                                                       |
+| **UIManager**        | **Gameplay / End Screen** | - Show player status, score, and level completion<br/>- Handle restart and menu navigation                             |
+| **GameOver**         | **End Screen**            | - Display end state (Win/Lose)<br/>- Restart or return to main menu                                                    |
+
+<br>
 flowchart TD
   start([Game Start])
   start --> move[Player Movement]
@@ -42,3 +54,4 @@ flowchart TD
   collide -->|Goal| complete[Level Complete]
   complete --> next[Next Level or End Screen]
   next --> move
+<br>
