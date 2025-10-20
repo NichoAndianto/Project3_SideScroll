@@ -19,7 +19,6 @@ Level Progression: Structured stages with checkpoints and end-goals.
 
 Simple Aesthetic: Clean visual design emphasizing clarity and flow.
 
-<br>
 ## Scene Flow 
 
 ```mermaid
@@ -87,7 +86,6 @@ graph TD
 
 ```
 
-<br>
 ## Module and Features
 
 | 📂 Name              | 🎬 Scene                  | 📋 Responsibility                                                                                                      |
@@ -99,7 +97,9 @@ graph TD
 | **UIManager**        | **Gameplay / End Screen** | - Show player status, score, and level completion<br/>- Handle restart and menu navigation                             |
 | **GameOver**         | **End Screen**            | - Display end state (Win/Lose)<br/>- Restart or return to main menu                                                    |
 
-<br>
+
+## Game Flowchart
+
 
 ```mermaid
 flowchart TD
@@ -119,7 +119,7 @@ flowchart TD
 
 ```
 
-<br>
+## Class Diagram
 
 ```mermaid
 classDiagram
