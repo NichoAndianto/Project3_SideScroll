@@ -1,15 +1,15 @@
-Developer & Contributions
+## Developer & Contributions
 
 NichoAndianto (Game Developer)
 <br>
 
-About
+## About
 
 Side-Scrolling Platformer [Prototype] is a 2D action platformer project developed to explore character movement, obstacle interaction, and progressive level design. The game focuses on smooth player control, responsive jumping, and engaging level flow. My contributions include designing the movement system, implementing physics-based interactions, and developing the level progression framework.
 
 <br>
 
-Key Features
+## Key Features
 
 Responsive Controls: Smooth horizontal movement, jumping, and mid-air adjustments.
 
