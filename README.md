@@ -20,6 +20,8 @@ Level Progression: Structured stages with checkpoints and end-goals.
 Simple Aesthetic: Clean visual design emphasizing clarity and flow.
 
 <br>
+Scene Flow
+
 flowchart LR
   mm[Main Menu]
   gp[Gameplay]
@@ -29,6 +31,7 @@ flowchart LR
   gp -- "Player Death / Level Complete" --> es
   es -- "Restart" --> gp
   es -- "Main Menu" --> mm
+  
 <br>
 
 | 📂 Name              | 🎬 Scene                  | 📋 Responsibility                                                                                                      |
@@ -41,6 +44,8 @@ flowchart LR
 | **GameOver**         | **End Screen**            | - Display end state (Win/Lose)<br/>- Restart or return to main menu                                                    |
 
 <br>
+GameFlow
+
 flowchart TD
   start([Game Start])
   start --> move[Player Movement]
@@ -52,6 +57,7 @@ flowchart TD
   collide -->|Ground| resetJump[Reset Jump State] --> move
   collide -->|Hazard| respawn[Respawn Player] --> move
   collide -->|Goal| complete[Level Complete]
-  complete --> next[Next Level or End Screen]
-  next --> move
+  complete --> nextLevel[Next Level or End Screen]
+  nextLevel --> end([Game End])
+
 <br>
